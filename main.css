@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    grid-template-rows: 100px 1fr 50px; /* Header, Main, Footer */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 10px;
+  }
+  
+  header {
+    background-color: lightblue;
+    grid-column: 1 / span 3; /* Span across all columns */
+  }
+  
+  main {
+    background-color: lightgray;
+  }
+  
+  footer {
+    background-color: lightgreen;
+    grid-column: 1 / span 3; /* Span across all columns */
+  }
